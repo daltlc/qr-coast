@@ -1,28 +1,65 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="left">
+      <HelloWorld msg="QR Coaster"/>
+      <b-list-group>
+        <b-list-group-item
+        class ="description">
+
+        Create your own custom QR coaster that will link to any web address. Enter the URL below and see the QR code change.  After you've decided that it's super groovy, go ahead and purchase.
+        
+        </b-list-group-item>
+      </b-list-group>
+    </div>
+    <div class="right">
+      <QR/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Vue from "vue";
+import BootstrapVue from "bootstrap-vue";
+import QR from "@/components/QR.vue";
+Vue.use(BootstrapVue);
+
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    QR
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding:2%;
+}
+@media screen and (max-width: 830px) {
+  #app{
+    display: unset;
+  }
+}
+.left{
+  margin-top: 42px;
+  margin-right:20px;
+}
+.description{
+  width:400px;
+  margin:auto;
+  font-size:18px;
+  margin-top:26px;
+  filter: drop-shadow(0px 0px 3px rgba(0,0,0,.2));
 }
 </style>
