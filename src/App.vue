@@ -56,7 +56,7 @@ export default {
   margin-right:20px;
 }
 .description{
-  width:400px;
+  width:360px;
   margin:auto;
   font-size:18px;
   margin-top:26px;
