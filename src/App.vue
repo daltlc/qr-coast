@@ -6,7 +6,7 @@
         <b-list-group-item
         class ="description">
 
-        Create your own custom QR coaster that will link to any web address. Enter the URL below and see the QR code change.  After you've decided that it's super groovy, go ahead and purchase.
+        Custom QR codes to navigate your smartphones browser. If it is not a URL, your browser will google whatever input you enter here. Watch the QR code change. After you've decided that it's super groovy, go ahead and purchase.
         
         </b-list-group-item>
       </b-list-group>
