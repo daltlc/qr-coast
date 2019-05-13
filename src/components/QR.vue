@@ -21,7 +21,7 @@
         </b-form-select>
 
         <!-- <b-button @click="this.generateQR" style=margin-right:10px; variant="secondary">Generate</b-button> -->
-        <b-button variant="dark">Buy</b-button>
+        <b-button v-b-tooltip.hover title="Coming Soon" class ="buy" variant="dark">Buy</b-button>
       </b-form>
     </div>
   </div>
@@ -47,6 +47,9 @@ export default {
 .form-main {
   display: flex;
   justify-content: center;
+}
+.buy:hover{
+    transform: scale(1.03);
 }
 </style>
 

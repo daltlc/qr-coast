@@ -62,4 +62,7 @@ export default {
   margin-top:26px;
   filter: drop-shadow(0px 0px 3px rgba(0,0,0,.2));
 }
+.description:hover {
+  transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 </style>
